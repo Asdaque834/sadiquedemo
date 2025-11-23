@@ -32,6 +32,38 @@
             padding: 40px;
             text-align: center;
         }
+        .features,
+        .contact-form {
+            background: white;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        .sidebar {
+            background: #fff;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: left;
+            border-left: 5px solid #333;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
         footer {
             background: #333;
             color: #fff;
@@ -54,15 +86,43 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
-
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
         <a href="#">Contact</a>
-        
     </nav>
 
     <section>
         <h2>Hello There!</h2>
         <p>This is a sample home page layout created using basic HTML and CSS.</p>
     </section>
+
+    <!-- NEW SIDEBAR INFORMATION BOX -->
+    <div class="sidebar">
+        <h3>Quick Info</h3>
+        <p>This website is built with simple HTML and CSS to demonstrate structure and styling.</p>
+    </div>
+
+    <!-- NEW FEATURES SECTION -->
+    <div class="features">
+        <h2>New Features Added</h2>
+        <ul style="text-align:left; width:60%; margin:auto; line-height:1.8;">
+            <li>Responsive navigation menu</li>
+            <li>Contact form added</li>
+            <li>Info sidebar box</li>
+            <li>Clean, modern layout</li>
+        </ul>
+    </div>
+
+    <!-- NEW CONTACT FORM SECTION -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Enter your name" required><br>
+            <input type="email" placeholder="Enter your email" required><br>
+            <textarea rows="5" placeholder="Your message here..." required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
     <footer>
         <p>&copy; 2025 Your Website. All rights reserved.</p>
